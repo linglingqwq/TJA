@@ -3,7 +3,7 @@
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>探秘地面塌陷·智护城市安全｜智能体知识包</title>
+  <title>探秘地面塌陷·智护城市安全｜智能体数据库</title>
   <style>
     body {
       margin: 0;
@@ -12,13 +12,13 @@
       color: #1f2a44;
     }
     .hero {
-      padding: 56px 24px 36px;
+      padding: 58px 24px 40px;
       text-align: center;
-      background: linear-gradient(120deg, #1a86ff, #2f5cff);
+      background: linear-gradient(120deg, #1694ff, #2459e8);
       color: white;
       border-bottom-left-radius: 42px;
       border-bottom-right-radius: 42px;
-      box-shadow: 0 8px 22px rgba(39, 96, 210, 0.24);
+      box-shadow: 0 8px 24px rgba(39, 96, 210, 0.25);
     }
     .hero h1 {
       margin: 0;
@@ -27,13 +27,13 @@
     }
     .hero p {
       margin: 18px auto 0;
-      max-width: 860px;
+      max-width: 900px;
       font-size: 20px;
       line-height: 1.7;
-      opacity: .95;
+      opacity: .96;
     }
     .wrap {
-      max-width: 1080px;
+      max-width: 1120px;
       margin: 36px auto 56px;
       padding: 0 24px;
     }
@@ -41,7 +41,7 @@
       background: white;
       border: 1px solid #d8e7ff;
       border-radius: 24px;
-      padding: 28px;
+      padding: 30px;
       margin-bottom: 24px;
       box-shadow: 0 10px 28px rgba(35, 90, 190, 0.10);
     }
@@ -69,6 +69,7 @@
       border: 2px solid #cde0ff;
       border-radius: 20px;
       padding: 22px;
+      min-height: 122px;
       transition: transform .18s ease, box-shadow .18s ease, border-color .18s ease;
     }
     .download:hover {
@@ -84,27 +85,18 @@
     }
     .download .desc {
       font-size: 16px;
-      line-height: 1.6;
+      line-height: 1.65;
       color: #3f4f6f;
     }
-    .steps {
-      display: grid;
-      grid-template-columns: repeat(4, minmax(0, 1fr));
-      gap: 16px;
-      margin-top: 18px;
-    }
-    .step {
-      background: #f7fbff;
-      border-radius: 18px;
-      padding: 18px;
-      border: 1px dashed #8bb7ff;
-      min-height: 120px;
-    }
-    .step strong {
-      display: block;
-      font-size: 20px;
+    .tag {
+      display: inline-block;
+      font-size: 14px;
+      background: #e8f1ff;
       color: #155cdf;
-      margin-bottom: 8px;
+      border-radius: 999px;
+      padding: 4px 10px;
+      margin-bottom: 10px;
+      font-weight: 600;
     }
     .footer {
       text-align: center;
@@ -115,56 +107,50 @@
     @media (max-width: 760px) {
       .hero h1 { font-size: 30px; }
       .hero p { font-size: 17px; }
-      .downloads, .steps { grid-template-columns: 1fr; }
+      .downloads { grid-template-columns: 1fr; }
     }
   </style>
 </head>
 <body>
   <section class="hero">
     <h1>探秘地面塌陷·智护城市安全</h1>
-    <p>欢迎来到智能体知识包下载页。请下载下面的资料，并上传到扣子/Coze 知识库中，让你的智能体拥有专门为本次活动准备的“城市安全小知识库”。</p>
+    <p>智能体数据库 V2：面向问答、案例判断、图像识别、绘图提示词和视频脚本生成的课堂活动资料。</p>
   </section>
 
   <main class="wrap">
     <section class="card">
-      <h2>一、下载知识包</h2>
-      <p>建议按顺序下载并上传。三个文件一起使用，效果更好。</p>
+      <h2>数据库下载</h2>
+      <p>以下文件可用于搭建“地面塌陷”主题智能体。教师测试题文件建议由组织者单独保存。</p>
       <div class="downloads">
         <a class="download" href="./地面塌陷儿童科普知识库.txt" download>
-          <div class="title">下载：地面塌陷儿童科普知识库</div>
-          <div class="desc">包含地面塌陷概念、常见原因、早期信号、安全做法和儿童版解释。</div>
+          <span class="tag">建议上传知识库</span>
+          <div class="title">地面塌陷儿童科普知识库</div>
+          <div class="desc">定义、常见原因、早期信号、安全行动、儿童化比喻和回答规则。</div>
         </a>
-        <a class="download" href="./城市塌陷场景案例卡片库.txt" download>
-          <div class="title">下载：城市塌陷场景案例卡片库</div>
-          <div class="desc">包含学校门口、小区道路、井盖周围、施工围挡等模拟案例。</div>
+        <a class="download" href="./城市塌陷场景案例库.txt" download>
+          <span class="tag">建议上传知识库</span>
+          <div class="title">城市塌陷场景案例库</div>
+          <div class="desc">学校、小区、井盖、施工围挡、公园草地等模拟案例和安全话术。</div>
         </a>
-        <a class="download" href="./智能体任务与角色提示词.txt" download>
-          <div class="title">下载：智能体任务与角色提示词</div>
-          <div class="desc">包含科普老师、写作助手、安全检查员、插画师和多智能体分工提示词。</div>
+        <a class="download" href="./图像识别与风险判断规则库.txt" download>
+          <span class="tag">建议上传知识库</span>
+          <div class="title">图像识别与风险判断规则库</div>
+          <div class="desc">看图识别线索、风险等级表达、输出格式、正常路面反例和禁止表达。</div>
         </a>
-        <a class="download" href="./课堂操作说明.txt" download>
-          <div class="title">下载：课堂操作说明</div>
-          <div class="desc">给小朋友使用的简明操作指南，包括推荐智能体名称、开场白和任务。</div>
+        <a class="download" href="./绘图与视频生成提示词库.txt" download>
+          <span class="tag">建议上传知识库</span>
+          <div class="title">绘图与视频生成提示词库</div>
+          <div class="desc">海报、三格漫画、15秒/20秒/30秒短视频脚本和视频API调用前提示词。</div>
+        </a>
+        <a class="download" href="./展示测试题与评价标准.txt" download>
+          <span class="tag">教师自用</span>
+          <div class="title">展示测试题与评价标准</div>
+          <div class="desc">用于展示环节测试智能体，不建议上传给学生智能体，避免测试题提前泄露。</div>
         </a>
       </div>
-    </section>
-
-    <section class="card">
-      <h2>二、课堂操作步骤</h2>
-      <div class="steps">
-        <div class="step"><strong>第1步</strong>打开扣子/Coze，创建一个新的智能体。</div>
-        <div class="step"><strong>第2步</strong>上传三个知识库文件，让智能体学习本次活动资料。</div>
-        <div class="step"><strong>第3步</strong>复制角色提示词，设置你的智能体身份和任务。</div>
-        <div class="step"><strong>第4步</strong>让智能体生成科普小册子、海报或问答内容。</div>
-      </div>
-    </section>
-
-    <section class="card">
-      <h2>三、安全提醒</h2>
-      <p>看到裂缝、坑洞、井盖下沉或施工区域异常时，不要靠近，不要围观，不要自己处理。请马上远离危险区域，并告诉老师、家长、保安、物业或专业人员。</p>
     </section>
   </main>
 
-  <div class="footer">本知识包用于儿童科普与智能体活动教学，不替代专业工程判断。</div>
+  <div class="footer">本数据库用于儿童科普与智能体活动教学，不替代专业工程判断。</div>
 </body>
 </html>
