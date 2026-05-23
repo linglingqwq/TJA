@@ -3,7 +3,7 @@
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>探秘地面塌陷·智护城市安全｜智能体数据库</title>
+  <title>探秘地面塌陷·智护城市安全｜智能体数据库 V3</title>
   <style>
     body {
       margin: 0;
@@ -12,9 +12,9 @@
       color: #1f2a44;
     }
     .hero {
-      padding: 58px 24px 40px;
+      padding: 56px 24px 38px;
       text-align: center;
-      background: linear-gradient(120deg, #1694ff, #2459e8);
+      background: linear-gradient(120deg, #1598ff, #2459e8);
       color: white;
       border-bottom-left-radius: 42px;
       border-bottom-right-radius: 42px;
@@ -27,13 +27,13 @@
     }
     .hero p {
       margin: 18px auto 0;
-      max-width: 900px;
+      max-width: 920px;
       font-size: 20px;
       line-height: 1.7;
       opacity: .96;
     }
     .wrap {
-      max-width: 1120px;
+      max-width: 1160px;
       margin: 36px auto 56px;
       padding: 0 24px;
     }
@@ -69,7 +69,7 @@
       border: 2px solid #cde0ff;
       border-radius: 20px;
       padding: 22px;
-      min-height: 122px;
+      min-height: 118px;
       transition: transform .18s ease, box-shadow .18s ease, border-color .18s ease;
     }
     .download:hover {
@@ -78,7 +78,7 @@
       border-color: #2f73ff;
     }
     .download .title {
-      font-size: 22px;
+      font-size: 21px;
       font-weight: 700;
       color: #155cdf;
       margin-bottom: 8px;
@@ -98,59 +98,116 @@
       margin-bottom: 10px;
       font-weight: 600;
     }
+    .images {
+      display: grid;
+      grid-template-columns: repeat(3, minmax(0, 1fr));
+      gap: 18px;
+      margin-top: 20px;
+    }
+    .image-card {
+      background: #f4f8ff;
+      border: 2px solid #cde0ff;
+      border-radius: 20px;
+      padding: 14px;
+    }
+    .image-card img {
+      width: 100%;
+      height: 220px;
+      object-fit: cover;
+      border-radius: 14px;
+      display: block;
+      background: #e6eefc;
+    }
+    .image-card a {
+      display: block;
+      margin-top: 12px;
+      font-weight: 700;
+      color: #155cdf;
+      text-decoration: none;
+      font-size: 16px;
+    }
+    .image-card p {
+      font-size: 15px;
+      line-height: 1.55;
+      margin: 8px 0 0;
+      color: #3f4f6f;
+    }
     .footer {
       text-align: center;
       color: #66738d;
       font-size: 15px;
       padding: 12px 0 36px;
     }
-    @media (max-width: 760px) {
+    @media (max-width: 820px) {
       .hero h1 { font-size: 30px; }
       .hero p { font-size: 17px; }
-      .downloads { grid-template-columns: 1fr; }
+      .downloads, .images { grid-template-columns: 1fr; }
+      .image-card img { height: auto; }
     }
   </style>
 </head>
 <body>
   <section class="hero">
     <h1>探秘地面塌陷·智护城市安全</h1>
-    <p>智能体数据库 V2：面向问答、案例判断、图像识别、绘图提示词和视频脚本生成的课堂活动资料。</p>
+    <p>智能体数据库 V3：支持问答、案例判断、图像识别和绘图提示词生成；已移除视频相关内容和单独测试题文件。</p>
   </section>
 
   <main class="wrap">
     <section class="card">
-      <h2>数据库下载</h2>
-      <p>以下文件可用于搭建“地面塌陷”主题智能体。教师测试题文件建议由组织者单独保存。</p>
+      <h2>数据库文件下载</h2>
+      <p>以下文件可用于搭建地面塌陷主题智能体。其中“系统提示词”不要上传到知识库，应复制到扣子智能体的角色设定或人设与回复逻辑中。</p>
       <div class="downloads">
-        <a class="download" href="./地面塌陷儿童科普知识库.txt" download>
-          <span class="tag">建议上传知识库</span>
-          <div class="title">地面塌陷儿童科普知识库</div>
-          <div class="desc">定义、常见原因、早期信号、安全行动、儿童化比喻和回答规则。</div>
+        <a class="download" href="./地面塌陷科普知识库.txt" download>
+          <span class="tag">上传知识库</span>
+          <div class="title">地面塌陷科普知识库</div>
+          <div class="desc">定义、常见原因、早期信号、安全行动、比喻和回答规则。</div>
         </a>
         <a class="download" href="./城市塌陷场景案例库.txt" download>
-          <span class="tag">建议上传知识库</span>
+          <span class="tag">上传知识库</span>
           <div class="title">城市塌陷场景案例库</div>
           <div class="desc">学校、小区、井盖、施工围挡、公园草地等模拟案例和安全话术。</div>
         </a>
         <a class="download" href="./图像识别与风险判断规则库.txt" download>
-          <span class="tag">建议上传知识库</span>
+          <span class="tag">上传知识库</span>
           <div class="title">图像识别与风险判断规则库</div>
-          <div class="desc">看图识别线索、风险等级表达、输出格式、正常路面反例和禁止表达。</div>
+          <div class="desc">看图线索、风险等级、输出格式、禁止表达和三张测试图片说明。</div>
         </a>
-        <a class="download" href="./绘图与视频生成提示词库.txt" download>
-          <span class="tag">建议上传知识库</span>
-          <div class="title">绘图与视频生成提示词库</div>
-          <div class="desc">海报、三格漫画、15秒/20秒/30秒短视频脚本和视频API调用前提示词。</div>
+        <a class="download" href="./绘图提示词与输出模板.txt" download>
+          <span class="tag">上传知识库</span>
+          <div class="title">绘图提示词与输出模板</div>
+          <div class="desc">海报、三格漫画、地下剖面图和绘图工具调用前的整理格式。</div>
         </a>
-        <a class="download" href="./展示测试题与评价标准.txt" download>
-          <span class="tag">教师自用</span>
-          <div class="title">展示测试题与评价标准</div>
-          <div class="desc">用于展示环节测试智能体，不建议上传给学生智能体，避免测试题提前泄露。</div>
+        <a class="download" href="./扣子智能体系统提示词.txt" download>
+          <span class="tag">复制到角色设定</span>
+          <div class="title">扣子智能体系统提示词</div>
+          <div class="desc">规定智能体如何查知识库、看图、回答案例、整理绘图提示词。</div>
         </a>
+      </div>
+    </section>
+
+    <section class="card">
+      <h2>图像识别测试图片</h2>
+      <p>这三张图片用于现场测试智能体的看图判断能力。建议不要作为知识库内容上传，而是在对话中直接上传给智能体提问。</p>
+      <div class="images">
+        <div class="image-card">
+          <img src="./test_image_01_surface_cracks.png" alt="测试图片1：表面裂缝">
+          <a href="./test_image_01_surface_cracks.png" download>下载测试图片1：表面裂缝</a>
+          <p>适合测试：能否识别细裂缝、局部破损，并给出不过度夸大的安全提醒。</p>
+        </div>
+        <div class="image-card">
+          <img src="./test_image_02_large_crack_settlement.png" alt="测试图片2：较大裂缝与变形">
+          <a href="./test_image_02_large_crack_settlement.png" download>下载测试图片2：较大裂缝与变形</a>
+          <p>适合测试：能否识别较明显裂缝、路面变形和绕行建议。</p>
+        </div>
+        <div class="image-card">
+          <img src="./test_image_03_road_sinkhole.png" alt="测试图片3：道路塌陷坑洞">
+          <a href="./test_image_03_road_sinkhole.png" download>下载测试图片3：道路塌陷坑洞</a>
+          <p>适合测试：能否识别明显坑洞、高风险和立即远离的安全提醒。</p>
+        </div>
       </div>
     </section>
   </main>
 
-  <div class="footer">本数据库用于儿童科普与智能体活动教学，不替代专业工程判断。</div>
+  <div class="footer">本数据库用于科普与智能体活动教学，不替代专业工程判断。</div>
 </body>
 </html>
