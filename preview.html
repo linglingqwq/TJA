@@ -1,0 +1,213 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>探秘地面塌陷·智护城市安全</title>
+  <style>
+    body {
+      margin: 0;
+      font-family: "Microsoft YaHei", "PingFang SC", Arial, sans-serif;
+      background: linear-gradient(135deg, #eef7ff 0%, #f8fbff 45%, #e7f2ff 100%);
+      color: #1f2a44;
+    }
+    .hero {
+      padding: 56px 24px 38px;
+      text-align: center;
+      background: linear-gradient(120deg, #1598ff, #2459e8);
+      color: white;
+      border-bottom-left-radius: 42px;
+      border-bottom-right-radius: 42px;
+      box-shadow: 0 8px 24px rgba(39, 96, 210, 0.25);
+    }
+    .hero h1 {
+      margin: 0;
+      font-size: 42px;
+      letter-spacing: 1px;
+    }
+    .hero p {
+      margin: 18px auto 0;
+      max-width: 900px;
+      font-size: 20px;
+      line-height: 1.7;
+      opacity: .96;
+    }
+    .wrap {
+      max-width: 1160px;
+      margin: 36px auto 56px;
+      padding: 0 24px;
+    }
+    .card {
+      background: white;
+      border: 1px solid #d8e7ff;
+      border-radius: 24px;
+      padding: 30px;
+      margin-bottom: 24px;
+      box-shadow: 0 10px 28px rgba(35, 90, 190, 0.10);
+    }
+    .card h2 {
+      margin: 0 0 14px;
+      font-size: 28px;
+      color: #165bd8;
+    }
+    .card p {
+      font-size: 18px;
+      line-height: 1.8;
+      margin: 8px 0;
+    }
+    .downloads {
+      display: grid;
+      grid-template-columns: repeat(2, minmax(0, 1fr));
+      gap: 18px;
+      margin-top: 20px;
+    }
+    .download {
+      display: block;
+      text-decoration: none;
+      color: #14315f;
+      background: #f4f8ff;
+      border: 2px solid #cde0ff;
+      border-radius: 20px;
+      padding: 22px;
+      min-height: 118px;
+      transition: transform .18s ease, box-shadow .18s ease, border-color .18s ease;
+    }
+    .download:hover {
+      transform: translateY(-3px);
+      box-shadow: 0 10px 24px rgba(35, 90, 190, 0.14);
+      border-color: #2f73ff;
+    }
+    .download .title {
+      font-size: 21px;
+      font-weight: 700;
+      color: #155cdf;
+      margin-bottom: 8px;
+    }
+    .download .desc {
+      font-size: 16px;
+      line-height: 1.65;
+      color: #3f4f6f;
+    }
+    .tag {
+      display: inline-block;
+      font-size: 14px;
+      background: #e8f1ff;
+      color: #155cdf;
+      border-radius: 999px;
+      padding: 4px 10px;
+      margin-bottom: 10px;
+      font-weight: 600;
+    }
+    .images {
+      display: grid;
+      grid-template-columns: repeat(3, minmax(0, 1fr));
+      gap: 18px;
+      margin-top: 20px;
+    }
+    .image-card {
+      background: #f4f8ff;
+      border: 2px solid #cde0ff;
+      border-radius: 20px;
+      padding: 14px;
+    }
+    .image-card img {
+      width: 100%;
+      height: 220px;
+      object-fit: cover;
+      border-radius: 14px;
+      display: block;
+      background: #e6eefc;
+    }
+    .image-card a {
+      display: block;
+      margin-top: 12px;
+      font-weight: 700;
+      color: #155cdf;
+      text-decoration: none;
+      font-size: 16px;
+    }
+    .image-card p {
+      font-size: 15px;
+      line-height: 1.55;
+      margin: 8px 0 0;
+      color: #3f4f6f;
+    }
+    .footer {
+      text-align: center;
+      color: #66738d;
+      font-size: 15px;
+      padding: 12px 0 36px;
+    }
+    @media (max-width: 820px) {
+      .hero h1 { font-size: 30px; }
+      .hero p { font-size: 17px; }
+      .downloads, .images { grid-template-columns: 1fr; }
+      .image-card img { height: auto; }
+    }
+  </style>
+</head>
+<body>
+  <section class="hero">
+    <h1>探秘地面塌陷·智护城市安全</h1>
+    <p>你好呀！这里有今天要用的城市安全小资料。把资料下载下来，交给你的智能体，它就能帮你认识地面裂缝、小坑和城市安全提醒。</p>
+  </section>
+
+  <main class="wrap">
+    <section class="card">
+      <h2>先下载这些小资料</h2>
+      <p>这些资料会教智能体很多本领：怎么回答问题，怎么看懂生活里的小场景，怎么看图片里的危险信号，还能帮你设计安全海报。</p>
+      <div class="downloads">
+        <a class="download" href="./地面塌陷科普知识库.txt" download>
+          <span class="tag">给智能体学习</span>
+          <div class="title">地面塌陷科普知识库</div>
+          <div class="desc">这里讲的是：地面为什么会裂、会沉、会塌，以及看到这些情况时应该怎么做。</div>
+        </a>
+        <a class="download" href="./城市塌陷场景案例库.txt" download>
+          <span class="tag">给智能体学习</span>
+          <div class="title">城市塌陷场景案例库</div>
+          <div class="desc">这里有学校门口、小区道路、井盖旁边、施工围挡附近等生活小场景。</div>
+        </a>
+        <a class="download" href="./图像识别与风险判断规则库.txt" download>
+          <span class="tag">给智能体学习</span>
+          <div class="title">图像识别与风险判断规则库</div>
+          <div class="desc">这里教智能体看图片时要注意什么：裂缝、小坑、积水、下沉和警戒线。</div>
+        </a>
+        <a class="download" href="./绘图提示词与输出模板.txt" download>
+          <span class="tag">给智能体学习</span>
+          <div class="title">绘图提示词与输出模板</div>
+          <div class="desc">这里教智能体怎样设计安全海报和科普漫画，让画面又清楚又安全。</div>
+        </a>
+        <a class="download" href="./扣子智能体系统提示词.txt" download>
+          <span class="tag">复制到角色设定</span>
+          <div class="title">给智能体的说明书</div>
+          <div class="desc">这不是拿来上传的资料，而是要复制到智能体的角色设定里，告诉它应该怎样回答。</div>
+        </a>
+      </div>
+    </section>
+
+    <section class="card">
+      <h2>再用这些图片考考智能体</h2>
+      <p>下载图片后，可以把图片发给智能体，问它：“你看到了什么危险信号？我们应该怎么做？”</p>
+      <div class="images">
+        <div class="image-card">
+          <img src="./test_image_01_surface_cracks.png" alt="测试图片1：表面裂缝">
+          <a href="./test_image_01_surface_cracks.png" download>下载图片1：地面细裂缝</a>
+          <p>看看智能体能不能发现细细的裂缝，并提醒大家不要踩上去试探。</p>
+        </div>
+        <div class="image-card">
+          <img src="./test_image_02_large_crack_settlement.png" alt="测试图片2：较大裂缝与变形">
+          <a href="./test_image_02_large_crack_settlement.png" download>下载图片2：较大的路面裂缝</a>
+          <p>看看智能体能不能发现裂缝更明显了，并提醒大家绕开这里。</p>
+        </div>
+        <div class="image-card">
+          <img src="./test_image_03_road_sinkhole.png" alt="测试图片3：道路塌陷坑洞">
+          <a href="./test_image_03_road_sinkhole.png" download>下载图片3：道路大坑</a>
+          <p>看看智能体能不能判断这是明显危险，并提醒大家马上远离、不要围观。</p>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <div class="footer">看到裂缝和坑洞，不靠近，先告诉大人。</div>
+</body>
+</html>
